@@ -86,9 +86,9 @@ body {
 }
 
 .copyright {
-    margin-top: 66px;
     margin-bottom: 16px;
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     align-items: flex-end;
     height: 16px;
