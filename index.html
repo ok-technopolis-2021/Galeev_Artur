@@ -1,61 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            document.querySelector("#switch-theme").addEventListener('click', switchTheme);
-        });
-
-        function switchTheme() {
-            let bodyCardClassList = document.querySelector("body").classList;
-            bodyCardClassList.toggle("dark-theme");
-            bodyCardClassList.toggle("light-theme");
-        }
-    </script>
     <meta charset="UTF-8">
     <title>Curriculum vitae</title>
-    <link rel="stylesheet" href="style.css"/>
+
+    <script type="text/javascript">
+        function Switch(obj) {
+            console.log(obj.style.backgroundColor);
+            if (obj.style.backgroundColor === "rgb(255, 255, 255)") {
+                console.log("HORRAAAAy");
+                obj.style.backgroundColor = "#0e0e0e";
+            } else {
+                obj.style.backgroundColor = "#FFFFFF";
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./dist/output.css"/>
 </head>
-<body id="switch-theme" class="dark-theme">
-<div class="main-card">
-    <section class="left-part">
-        <div class="left-part_main">
-            <div class="left-part_photo">
-                <img class="left-part_photo-img" src="images/face.jpg" alt="photo"/>
-            </div>
-            <div class="left-part_employee-FIO">
+<body>
+<div id="color-switcher" onclick="Switch(this)">
+    <div class="main-card">
+        <div class="left-part">
+            <img class="photo" src="images/face.jpg" alt="photo"/>
+            <div class="employee_FIO">
                 Alex Smith
             </div>
-            <div class="left-part_employee-speciality">
+            <div class="employee_speciality">
                 Web Designer
             </div>
-            <div class="left-part_social-networks">
+            <div class="social-networks">
                 <a href="https://www.vk.com/coradead">
-                    <img class="left-part_social-networks-img" src="images/vk-logo.png" height="24" alt="vk-logo">
+                    <img src="images/vk-logo.png" alt="vk-logo">
                 </a>
                 <a href="https://www.telegram.me/coradead">
-                    <img class="left-part_social-networks-img" src="images/tg-logo.png" height="24" alt="telegram-logo">
+                    <img src="images/tg-logo.png" alt="telegram-logo">
                 </a>
                 <a href="https://www.github.com/coradead">
-                    <img class="left-part_social-networks-img" src="images/git-logo.png" height="24" alt="github-logo">
+                    <img src="images/git-logo.png" alt="github-logo">
                 </a>
             </div>
-            <div class="left-part_download">
-                <button class="left-part_download-button">
-                    Download CV
-                </button>
-            </div>
-            <footer class="left-part_copyright">
+            <button class="button">
+                Download CV
+            </button>
+            <footer class="copyright">
                 &#169 2021 All rights reserved.
             </footer>
         </div>
-    </section>
-    <section class="right-part">
-        <div class="right-part_main">
-            <div class="right-part_employee-name">Alex Smith</div>
-            <div class="right-part_employee-position">Web Designer</div>
+        <div class="right-part">
+            <b class="employee_name">Alex Smith</b>
+            <section class="employee_position">Web Designer</section>
         </div>
-    </section>
+    </div>
 </div>
 </body>
 </html>
