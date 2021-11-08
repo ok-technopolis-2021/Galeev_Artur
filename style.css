@@ -1,28 +1,22 @@
 body {
     background-color: #000000;
-}
-.main-card {
-    position: absolute;
-    width: 1127px;
-    height: 595px;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
     display: flex;
-    align-items: stretch;
+    justify-content: center;
+    margin: 4%;
+}
 
+.main-card {
     background: #444444;
     border-radius: 30px;
+
+    display: flex;
 
     font-family: Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-
 }
 
-.left-part {
+.left-part_main {
     display: flex;
     height: 595px;
     width: 380px;
@@ -31,8 +25,7 @@ body {
     align-items: center;
 }
 
-.photo{
-    display: flex;
+.left-part_photo-img {
     width: 180px;
     height: 180px;
     margin-top: 70px;
@@ -40,8 +33,7 @@ body {
     box-shadow: 12px 12px 0 0 rgb(196 196 196);
 }
 
-.employee_FIO {
-    display: flex;
+.left-part_employee-FIO {
     margin-top: 29px;
 
     font-weight: bold;
@@ -50,14 +42,14 @@ body {
     color: #FFFFFF;
 }
 
-.employee_speciality {
-    display: flex;
+.left-part_employee-speciality {
     margin-top: 8px;
     font-size: 20px;
 
     color: #FFFFFF;
 }
-.social-networks {
+
+.left-part_social-networks {
     width: 110px;
     display: flex;
     align-self: center;
@@ -67,10 +59,11 @@ body {
     height: 24px;
 }
 
-.social-networks img {
+.left-part_social-networks-img {
     border-radius: 50%;
 }
-.button {
+
+.left-part_download-button {
     margin-top: 57px;
     width: 168px;
     height: 46px;
@@ -85,7 +78,7 @@ body {
     color: #FFFFFF;
 }
 
-.copyright {
+.left-part_copyright {
     margin-bottom: 16px;
     display: flex;
     flex-grow: 1;
@@ -96,7 +89,7 @@ body {
     color: #FFFFFF;
 }
 
-.right-part {
+.right-part_main {
     color: #FFFFFF;
     background-color: #222222;
     width: 747px;
@@ -107,11 +100,15 @@ body {
     border-radius: 30px;
 }
 
-.right-part .employee_name {
+.right-part {
+    display: flex;
+}
+
+.right-part_employee-name {
     font-size: 62px;
 }
 
-.right-part .employee_position {
+.right-part_employee-position {
     margin-top: 8px;
     font-size: 22px;
 }
