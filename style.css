@@ -1,3 +1,11 @@
+:root .light-theme {
+    background-color: white;
+}
+
+:root .dark-theme {
+    background-color: black;
+}
+
 body {
     background-color: #000000;
     display: flex;

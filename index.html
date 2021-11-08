@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.querySelector("#switch-theme").addEventListener('click', switchTheme);
+        });
+
+        function switchTheme() {
+            let bodyCardClassList = document.querySelector("body").classList;
+            bodyCardClassList.toggle("dark-theme");
+            bodyCardClassList.toggle("light-theme");
+        }
+    </script>
     <meta charset="UTF-8">
     <title>Curriculum vitae</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="switch-theme" class="dark-theme">
 <div class="main-card">
     <section class="left-part">
         <div class="left-part_main">
