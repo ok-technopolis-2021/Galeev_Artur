@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum vitae</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body class="light-theme">
+<div class="main-card">
+    <section class="left-part-wrapper">
+        <div class="left-part_main">
+            <div class="left-part_photo">
+                <img class="left-part_photo-img" src="assets/face.jpg" alt="photo"/>
+            </div>
+            <div class="left-part_employee-FIO">
+                Alex Smith
+            </div>
+            <div class="left-part_employee-speciality">
+                Web Designer
+            </div>
+            <div class="left-part_social-networks">
+                <a href="https://www.vk.com/coradead">
+                    <img class="left-part_social-networks-img" src="assets/vk-logo.png" height="24" alt="vk-logo">
+                </a>
+                <a href="https://www.telegram.me/coradead">
+                    <img class="left-part_social-networks-img" src="assets/tg-logo.png" height="24" alt="telegram-logo">
+                </a>
+                <a href="https://www.github.com/coradead">
+                    <img class="left-part_social-networks-img" src="assets/git-logo.png" height="24" alt="github-logo">
+                </a>
+            </div>
+            <div class="left-part_download">
+                <button class="left-part_download-button">
+                    Download CV
+                </button>
+            </div>
+            <footer class="left-part_copyright">
+                &#169 2021 All rights reserved.
+            </footer>
+        </div>
+    </section>
+    <section class="right-part-wrapper">
+        <div class="right-part_main">
+            <div class="right-part_second-page">
+                <div class="right-part_second-page_title">
+                    Coding skills:
+                </div>
+                <div class="right-part_second-page_skills-list" id="skills_list">
+                    <template id="template">
+                        <div class="skills-list_skill">
+                            <section class="skill-left">
+                                <div class="skill-left_name">
+                                    name
+                                </div>
+                                <div class="skill-left_progress">
+                                    <div class="skill_bar"></div>
+                                </div>
+                            </section>
+                            <section class="skill-right">
+                                <div class="skill-right_delete">
+                                    <img class="skill-right_delete_img" src="assets/minus-light.png" alt="h">
+                                </div>
+                            </section>
+                        </div>
+                    </template>
+                </div>
+                <div class="right-part_second-page_new-skill_form">
+                    <form id="formElem">
+                        <div class="form">
+                            <input type="text" name="nameField" id="name" class="form_input" autocomplete="off"
+                                   placeholder=" ">
+                            <label for="name" class="form_label">Name of skill</label>
+                        </div>
+                        <p></p>
+                        <div class="form">
+                            <input type="number" name="numberField" id="number" class="form_input" autocomplete="off"
+                                   placeholder=" ">
+                            <label for="number" class="form_label">Level of skill</label>
+                        </div>
+                        <p></p>
+                        <button type="submit" id="apply-button" class="apply-button" role="button">ADD NEW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>
