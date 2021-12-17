@@ -15,63 +15,42 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 const tmpl = document.getElementById('template');
 const nameDiv = tmpl.content.querySelector('.skill-left_name');
-const skillDiv = tmpl.content.querySelector('.skill-left_progress');
+const skillDiv = tmpl.content.querySelector('.skill_bar');
 
 function toElement(name, progress) {
-    // let newSkillDiv = document.createElement('div');
-    // newSkillDiv.classList.add('skills-list_skill');
-    // newSkillDiv.innerHTML =
-    //     '                       <section class="skill-left">' +
-    //     '                            <div class="skill-left_name">' +
-    //     '                                ' + name +
-    //     '                            </div>' +
-    //     '                            <div class="skill-left_progress">' +
-    //     '                                <div class="skill_bar" style="width:' + progress + '%"></div>' +
-    //     '                            </div>' +
-    //     '                        </section>' +
-    //     '                        <section class="skill-right">' +
-    //     '                            <div class="skill-right_delete">' +
-    //     '                                <img class="skill-right_delete_img" src="assets/minus-light.png" alt="h">' +
-    //     '                            </div>' +
-    //     '                        </section>'
-    // ;
-
     nameDiv.textContent = name;
     skillDiv.style.width = progress + '%';
 
-    let newSkillDiv = tmpl.content.cloneNode(true);
-
-    let img = newSkillDiv.querySelector('.skill-right_delete_img');
+    let newSkillTemplate = tmpl.content.cloneNode(true);
+    let img = newSkillTemplate.querySelector('.skill-right_delete_img');
+    let newSkillDiv = newSkillTemplate.querySelector('.skills-list_skill');
     img.addEventListener('click', () => {
+
         newSkillDiv.remove();
     })
-    return newSkillDiv;
+    return newSkillTemplate;
 }
 
-
-const list = document.getElementById('skills_list');
-// var applyBtn = document.getElementById("apply-button");
-// var nameField = document.getElementById("name");
-// var numberField = document.getElementById("number");
+let list;
+document.addEventListener("DOMContentLoaded", function (event) {
+    list = document.getElementById('skills_list');
+});
 
 // Example
 list.appendChild(toElement('JAVA', 90));
 list.appendChild(toElement('C++', 60));
 
-// applyBtn.addEventListener('click', () => {
-//     if (!(nameField.value === '') && !(numberField.value === '') ) {
-//         list.appendChild(toElement(nameField.value, numberField.value));
-//     }
-// })
-
-const form = document.getElementById('formElem');
+let form;
+document.addEventListener("DOMContentLoaded", function (event) {
+    form = document.getElementById('formElem');
+});
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const nameField = form.querySelector('[name="nameField"]'),
         numberField = form.querySelector('[name="numberField"]');
-    if (!(nameField.value === '') && !(numberField.value === '') ) {
+    if (!(nameField.value === '') && !(numberField.value === '')) {
         list.appendChild(toElement(nameField.value, numberField.value));
     }
 });
