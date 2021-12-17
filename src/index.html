@@ -47,20 +47,40 @@
                     Coding skills:
                 </div>
                 <div class="right-part_second-page_skills-list" id="skills_list">
-
+                    <template id="template">
+                        <div class="skills-list_skill">
+                            <section class="skill-left">
+                                <div class="skill-left_name">
+                                    name
+                                </div>
+                                <div class="skill-left_progress">
+                                    <div class="skill_bar"></div>
+                                </div>
+                            </section>
+                            <section class="skill-right">
+                                <div class="skill-right_delete">
+                                    <img class="skill-right_delete_img" src="assets/minus-light.png" alt="h">
+                                </div>
+                            </section>
+                        </div>
+                    </template>
                 </div>
                 <div class="right-part_second-page_new-skill_form">
-                    <div class="form">
-                        <input type="text" id="name" class="form_input" autocomplete="off" placeholder=" ">
-                        <label for="name" class="form_label">Name of skill</label>
-                    </div>
-                    <p></p>
-                    <div class="form">
-                        <input type="number" id="number" class="form_input" autocomplete="off" placeholder=" ">
-                        <label for="number" class="form_label">Level of skill</label>
-                    </div>
-                    <p></p>
-                    <button id="apply-button" class="apply-button" role="button">ADD NEW</button>
+                    <form id="formElem">
+                        <div class="form">
+                            <input type="text" name="nameField" id="name" class="form_input" autocomplete="off"
+                                   placeholder=" ">
+                            <label for="name" class="form_label">Name of skill</label>
+                        </div>
+                        <p></p>
+                        <div class="form">
+                            <input type="number" name="numberField" id="number" class="form_input" autocomplete="off"
+                                   placeholder=" ">
+                            <label for="number" class="form_label">Level of skill</label>
+                        </div>
+                        <p></p>
+                        <button type="submit" id="apply-button" class="apply-button" role="button">ADD NEW</button>
+                    </form>
                 </div>
             </div>
         </div>
