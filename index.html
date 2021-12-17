@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            document.querySelector("#switch-theme").addEventListener('click', switchTheme);
-        });
-
-        function switchTheme() {
-            let bodyCardClassList = document.querySelector("body").classList;
-            bodyCardClassList.toggle("dark-theme");
-            bodyCardClassList.toggle("light-theme");
-        }
-    </script>
     <meta charset="UTF-8">
     <title>Curriculum vitae</title>
     <link rel="stylesheet" href="style.css"/>
@@ -21,7 +10,7 @@
     <section class="left-part">
         <div class="left-part_main">
             <div class="left-part_photo">
-                <img class="left-part_photo-img" src="images/face.jpg" alt="photo"/>
+                <img class="left-part_photo-img" src="src/images/face.jpg" alt="photo"/>
             </div>
             <div class="left-part_employee-FIO">
                 Alex Smith
@@ -31,13 +20,13 @@
             </div>
             <div class="left-part_social-networks">
                 <a href="https://www.vk.com/coradead">
-                    <img class="left-part_social-networks-img" src="images/vk-logo.png" height="24" alt="vk-logo">
+                    <img class="left-part_social-networks_img" src="src/images/vk-logo.png" height="24" alt="vk-logo">
                 </a>
                 <a href="https://www.telegram.me/coradead">
-                    <img class="left-part_social-networks-img" src="images/tg-logo.png" height="24" alt="telegram-logo">
+                    <img class="left-part_social-networks_img" src="src/images/tg-logo.png" height="24" alt="telegram-logo">
                 </a>
                 <a href="https://www.github.com/coradead">
-                    <img class="left-part_social-networks-img" src="images/git-logo.png" height="24" alt="github-logo">
+                    <img class="left-part_social-networks_img" src="src/images/git-logo.png" height="24" alt="github-logo">
                 </a>
             </div>
             <div class="left-part_download">
@@ -57,5 +46,6 @@
         </div>
     </section>
 </div>
+<script src="/src/app.js"></script>
 </body>
 </html>
