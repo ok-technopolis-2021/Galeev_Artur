@@ -4,7 +4,7 @@ import classes from "./SkillForm.component.css"
 import MyButton from "../UI/MyButton/MyButton"
 import MyInput from "../UI/MyInput/MyInput"
 
-const SkilForm = ({create}) => {
+const SkillForm = ({create}) => {
     const [skill, setSkill] = React.useState({name: '', level: ''})
 
     const addNewSkill = (e) => {
@@ -37,4 +37,4 @@ const SkilForm = ({create}) => {
     );
 };
 
-export default SkilForm;
+export default SkillForm;
