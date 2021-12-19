@@ -1,0 +1,11 @@
+.RightPart {
+    height: 535px;
+    flex-grow: 6;
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 30px;
+}

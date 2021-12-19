@@ -1,1 +1,0 @@
-# Galeev_Artur

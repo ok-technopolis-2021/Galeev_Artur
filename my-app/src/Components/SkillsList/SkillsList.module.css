@@ -1,0 +1,10 @@
+.SkillList {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    border: transparent 4px;
+    border-radius: 15px;
+}
