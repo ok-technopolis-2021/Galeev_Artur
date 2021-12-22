@@ -8,7 +8,7 @@ const SkillsList = ({removeSkill, skills, ...props}) => {
         <div className={classes.SkillList}>
             {skills.map(
             (skillItem, index) =>
-                <SkillDiv removeSkill={removeSkill} skill={skillItem}/>
+                <SkillDiv key={skillItem.id} removeSkill={removeSkill} skill={skillItem}/>
             )}
         </div>
     );

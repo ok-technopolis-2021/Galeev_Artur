@@ -4,7 +4,7 @@ import IcnButton from "../UI/IcnButton/IcnButton"
 
 const SocialNetworks = (props) => {
     return (
-        <div className={classes.SocialNetworks}>
+        <div className={classes.SocialNetworks} {...props}>
             {props.networks.map(
                 (network) =>
                     <IcnButton
