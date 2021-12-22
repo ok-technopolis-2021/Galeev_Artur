@@ -4,7 +4,6 @@ import classes from "./RightPart.module.css"
 import MyButton from "../UI/MyButton/MyButton"
 import MyModal from "../UI/MyModal/MyModal"
 import SkillList from "../SkillsList/SkillsList"
-import MyInput from "../UI/MyInput/MyInput"
 import SkillForm from "../SkillForm/SkillForm"
 
 const RigthPart = () => {

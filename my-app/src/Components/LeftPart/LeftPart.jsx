@@ -19,10 +19,14 @@ const LeftPart = () => {
     ]
     return (
         <div className={classes.LeftPart}>
-            <Photo className={classes.LeftPart_Photo} src={face} height="180px" width="180px"/>
+            <div className={classes.LeftPart_Photo}>
+                <Photo className={classes.LeftPart_Photo} src={face} height="180px" width="180px"/>
+            </div>
             <div className={classes.LeftPart_FIO}>Alex Smith</div>
             <div className={classes.LeftPart_Speciality}>Web Designer</div>
-            <SocialNetworks className={classes.LeftPart_Networks} networks={networks}/>
+            <div className={classes.LeftPart_Networks}>
+                <SocialNetworks networks={networks}/>
+            </div>
             <div className={classes.LeftPart_MyButton}>
                 <MyButton>Download</MyButton>
             </div>
