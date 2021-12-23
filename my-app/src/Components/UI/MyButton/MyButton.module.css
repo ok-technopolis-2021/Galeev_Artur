@@ -1,0 +1,13 @@
+.MyButton {
+    width: 168px;
+    height: 46px;
+
+    background: transparent;
+    border: 3px solid #FFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFF;
+}

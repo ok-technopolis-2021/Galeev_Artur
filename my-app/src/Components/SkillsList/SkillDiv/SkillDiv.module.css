@@ -1,0 +1,55 @@
+.Skill {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    border: transparent 4px;
+    border-radius: 15px;
+    height: 5em;
+    min-width: 400px;
+}
+
+.Skill_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-grow: 6;
+    height: 100%;
+}
+
+.Skill_left_name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    flex-grow: 5;
+    margin-left: 0.5em;
+}
+
+.Skill_left_progress {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0.3em;
+    padding: 0.15em;
+    background-color: transparent;
+    border: solid 2px darkcyan;
+    border-radius: 15px;
+}
+
+.Skill_left_progress_bar {
+    margin-top: 0.04em;
+    width: 60%;
+    height: 100%;
+    background: darkcyan;
+    border-radius: 15px;
+}
+
+.Skill_right {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+}

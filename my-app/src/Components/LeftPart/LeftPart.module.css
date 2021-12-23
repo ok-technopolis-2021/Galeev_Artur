@@ -1,0 +1,35 @@
+.LeftPart {
+    height: 525px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.LeftPart_Photo {
+    flex-grow: 40;
+}
+
+.LeftPart_FIO {
+    flex-grow: 10;
+    font-weight: bold;
+    font-size: 38px;
+    color: #FFF;
+}
+
+.LeftPart_Speciality {
+    flex-grow: 15;
+    font-size: 20px;
+
+    color: #FFF;
+}
+
+.LeftPart_Networks {
+    flex-grow: 40;
+}
+
+.LeftPart_MyButton {
+    flex-grow: 100;
+}
