@@ -23,7 +23,9 @@ const RigthPart = () => {
 
     return (
         <div className={classes.RightPart}>
-            <MyButton onClick={() => setModal(true)}>Создать навык</MyButton>
+            <div className={classes.RightPart_Button}>
+                <MyButton onClick={() => setModal(true)}>Создать навык</MyButton>
+            </div>
             <SkillList skills={skills} removeSkill={removeSkill}/>
             <MyModal visible={modal} setVisible={setModal}>
                 <SkillForm create={createSkill}/>

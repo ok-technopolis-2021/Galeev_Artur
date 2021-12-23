@@ -1,5 +1,6 @@
 .RightPart {
-    height: 585px;
+    min-height: 36.5em;
+    width: 20em;
     flex-grow: 6;
     background-color: rgba(34, 34, 34, 1);
     display: flex;
@@ -7,4 +8,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
